@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body,html {
+	padding: 0;
+	margin:0;
+	height: 100%;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+.button{
+	height: 10px;
+	width: 200px;
+}
+.align{
+	text-align: center;
+}
+.contenaireq{
+	width: 100%;
+	height: 100%;
+}
+#quest2,#quest3,#quest4,
+#quest5,#quest6,#quest7,
+#quest8,#quest9,#quest10 {
+	transform: translateY(-900px);
+	display: none;
+	transition: 0.5s;
+}
+#quest2.transform,#quest3.transform,#quest4.transform,
+#quest5.transform,#quest6.transform,#quest7.transform,
+#quest8.transform,#quest9.transform,#quest10.transform {
+	transform: translateY(1px);
+	display: block; 
+	transition: 0.5s;
+
+}
+.none {
+	display: none;
+}
+.question {
+	width: 100%;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.contenaireQuestion {
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	height: 69%;	
+	width: 100%;
+}
+.quizsection {
+	border: 1px solid blue;
+	height: 50%;
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;	
+}
+.block {
+	border: 1px solid red;
+	width: 45%;
+	height: 25%;
+	display: flex;
+	align-items: center;
+}
+.btn {
+	background: #085c94;
+	background-image: -webkit-linear-gradient(top, #085c94, #04273d);
+	background-image: -moz-linear-gradient(top, #085c94, #04273d);
+	background-image: -ms-linear-gradient(top, #085c94, #04273d);
+	background-image: -o-linear-gradient(top, #085c94, #04273d);
+	background-image: linear-gradient(to bottom, #085c94, #04273d);
+	-webkit-border-radius: 60;
+	-moz-border-radius: 60;
+	border-radius: 60px;
+	-webkit-box-shadow: 3px 9px 40px #000000;
+	-moz-box-shadow: 3px 9px 40px #000000;
+	box-shadow: 3px 9px 40px #000000;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 17px;
+	padding: 12px 20px 10px 20px;
+	border: solid #ffffff 0px;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background: #0767a8;
+	background-image: -webkit-linear-gradient(top, #0767a8, #021a29);
+	background-image: -moz-linear-gradient(top, #0767a8, #021a29);
+	background-image: -ms-linear-gradient(top, #0767a8, #021a29);
+	background-image: -o-linear-gradient(top, #0767a8, #021a29);
+	background-image: linear-gradient(to bottom, #0767a8, #021a29);
+	text-decoration: none;
+}
+
+@media screen and (max-width: 640px) {
+	.quizsection{
+	width: 73%;
+	}
+}
