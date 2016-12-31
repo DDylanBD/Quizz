@@ -17,24 +17,26 @@ body,html {
 .contenaireq{
 	width: 100%;
 	height: 100%;
+	position: absolute;
 }
 #quest2,#quest3,#quest4,
 #quest5,#quest6,#quest7,
 #quest8,#quest9,#quest10 {
-	transform: translateY(-900px);
-	display: none;
-	transition: 0.5s;
+	transition: 0.1s;
+	opacity: 0;
+	right: 9000px;
 }
 #quest2.transform,#quest3.transform,#quest4.transform,
 #quest5.transform,#quest6.transform,#quest7.transform,
 #quest8.transform,#quest9.transform,#quest10.transform {
-	transform: translateY(1px);
-	display: block; 
 	transition: 0.5s;
+	opacity: 1;
+	right: 0;
 
 }
 .none {
-	display: none;
+	opacity: 0;
+	right: 9000px;
 }
 .question {
 	width: 100%;
@@ -100,6 +102,6 @@ body,html {
 
 @media screen and (max-width: 640px) {
 	.quizsection{
-	width: 73%;
+		width: 73%;
 	}
 }
